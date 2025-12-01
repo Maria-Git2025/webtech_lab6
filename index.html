@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторная работа №6: Основы JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Лабораторная работа №6: Основы JavaScript</h1>
+      </header>
+
+      <main class="content">
+        <!-- Функция 1: Возведение в степень -->
+        <section class="function-card">
+          <h2 class="function-title">Функция pow(x, n)</h2>
+          <p class="function-description">
+            Возведение в степень. Возвращает x в степени n. Поддерживает только
+            натуральные значения n.
+          </p>
+          <div class="input-section">
+            <span>Основание (x):</span>
+            <input type="number" id="pow-base" placeholder="Введите число" />
+
+            <span>Показатель степени (n):</span>
+            <input
+              type="number"
+              id="pow-exp"
+              placeholder="Введите натуральное целое число"
+            />
+          </div>
+          <button onclick="calculatePow()">Вычислить степень</button>
+          <div class="result" id="pow-result">Результат появится здесь</div>
+        </section>
+
+        <!-- Функция 2: Нахождение НОД -->
+        <section class="function-card">
+          <h2 class="function-title">Функция gcd(a, b)</h2>
+          <p class="function-description">
+            Нахождение наибольшего общего делителя (НОД) двух неотрицательных
+            чисел.
+          </p>
+          <div class="input-section">
+            <span>Первое число (a):</span>
+            <input
+              type="number"
+              id="gcd-a"
+              placeholder="Введите неотрицательное число"
+            />
+
+            <span>Второе число (b):</span>
+            <input
+              type="number"
+              id="gcd-b"
+              placeholder="Введите неотрицательное число"
+            />
+          </div>
+          <button onclick="calculateGcd()">Найти НОД</button>
+          <div class="result" id="gcd-result">Результат появится здесь</div>
+        </section>
+
+        <!-- Функция 3: Наименьшая цифра -->
+        <section class="function-card">
+          <h2 class="function-title">Функция minDigit(x)</h2>
+          <p class="function-description">
+            Находит наименьшую цифру в целом неотрицательном числе x.
+          </p>
+          <div class="input-section">
+            <span>Число (x):</span>
+            <input
+              type="number"
+              id="min-digit"
+              placeholder="Введите целое неотрицательное число"
+            />
+          </div>
+          <button onclick="calculateMinDigit()">Найти наименьшую цифру</button>
+          <div class="result" id="min-digit-result">
+            Результат появится здесь
+          </div>
+        </section>
+
+        <!-- Функция 4: Pluralization -->
+        <section class="function-card">
+          <h2 class="function-title">Функция pluralizeRecords(n)</h2>
+          <p class="function-description">
+            Формирует строку с правильной формой множественного числа для слова
+            "запись".
+          </p>
+          <div class="input-section">
+            <span>Количество записей (n):</span>
+            <input
+              type="number"
+              id="plural-n"
+              placeholder="Введите целое неотрицательное число"
+            />
+          </div>
+          <button onclick="calculatePlural()">Сформировать фразу</button>
+          <div class="result" id="plural-result">Результат появится здесь</div>
+        </section>
+
+        <!-- Функция 5: Числа Фибоначчи -->
+        <section class="function-card">
+          <h2 class="function-title">Функция fibb(n)</h2>
+          <p class="function-description">
+            Возвращает n-ое число из последовательности Фибоначчи (n ≤ 1000).
+          </p>
+          <div class="input-section">
+            <span>Позиция в последовательности:</span>
+            <input
+              type="number"
+              id="fib-n"
+              placeholder="Введите целое число от 0 до 1000"
+            />
+          </div>
+          <button onclick="calculateFibb()">Вычислить число Фибоначчи</button>
+          <div class="result" id="fib-result">Результат появится здесь</div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Лабораторную работу выполнила студентка группы 241-361: Мария
+          Андрианова
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
